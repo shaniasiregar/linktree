@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --background:#D0BFFF;
+    --text:#a56cf9;
+    --main: #FFF8C9;
+    --secondary: #BEADFA;
+    --stroke: #FFCF96;
+}
+body{
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+.logo{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.logo >img {
+    border-radius: 100px;
+    width: 15%;
+    border: 2px solid var(--secondary);
+    left: 42%;
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 10px;
+}
+
+header>h2{
+    font-size: 42px;
+    margin-top: -10px;
+    color: var(--text);
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: -2px 2px rgba(0,0,0,0,25);
+}
+
+section{
+    margin-top: 50px;
+}
+
+section> .sosmed{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sosmed> a{
+    margin-bottom: 20px;
+    border: 1px solid var(--background);
+    background: var(--main);
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    width: 50%;
+    max-width: 50%;
+    border-radius: 10px;
+    color: var(--text);
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+.sosmed>a:hover{
+    top: -10px;
+    opacity: 770%;
+}
+
+footer{
+    color: var(--text);
+    display: flex;
+    position: relative;
+}
+footer>p{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50% -50%);
+}
